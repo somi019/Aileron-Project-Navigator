@@ -29,7 +29,7 @@ HBRUSH g_hBgBrush = NULL; // dark background brush
 COLORREF g_lightGreen = RGB(180, 255, 180);
 COLORREF g_grey = RGB(180, 180, 180);
 bool g_removeMode = false; // when true, next button click removes that button
-WCHAR szTitle[MAX_LOADSTRING] = L"Project Navigator";
+WCHAR szTitle[MAX_LOADSTRING] = L"Aileron Project Navigator";
 WCHAR szWindowClass[MAX_LOADSTRING] = L"PROJECT_NAV_CLASS";
 std::wstring g_configFilePath = L""; // path to currently bound config file
 
@@ -258,6 +258,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
             wc.hInstance = hInst;
             wc.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
             wc.lpszClassName = L"AddPathForm";
+            wc.hIcon = LoadIconW(hInst, MAKEINTRESOURCE(IDI_SMALL));
 
             WNDCLASSW existing = { 0 };
             if (!GetClassInfoW(hInst, wc.lpszClassName, &existing)) {
@@ -270,6 +271,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
             if (hDlg) {
                 CenterWindow(hDlg);
                 ShowWindow(hDlg, SW_SHOW);
+                SendMessageW(hDlg, WM_SETICON, ICON_SMALL, (LPARAM)LoadIconW(hInst, MAKEINTRESOURCE(IDI_SMALL)));
+                SendMessageW(hDlg, WM_SETICON, ICON_BIG, (LPARAM)LoadIconW(hInst, MAKEINTRESOURCE(IDI_ICON1)));
                 UpdateWindow(hDlg);
             }
         }
@@ -289,6 +292,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
             wcRoot.hInstance = hInst;
             wcRoot.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
             wcRoot.lpszClassName = L"AddPathForm";
+            wcRoot.hIcon = LoadIconW(hInst, MAKEINTRESOURCE(IDI_SMALL));
             WNDCLASSW existingRoot = { 0 };
             if (!GetClassInfoW(hInst, wcRoot.lpszClassName, &existingRoot)) {
                 RegisterClassW(&wcRoot);
@@ -300,6 +304,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
             if (hRootDlg) {
                 CenterWindow(hRootDlg);
                 ShowWindow(hRootDlg, SW_SHOW);
+                SendMessageW(hRootDlg, WM_SETICON, ICON_SMALL, (LPARAM)LoadIconW(hInst, MAKEINTRESOURCE(IDI_SMALL)));
+                SendMessageW(hRootDlg, WM_SETICON, ICON_BIG, (LPARAM)LoadIconW(hInst, MAKEINTRESOURCE(IDI_ICON1)));
                 UpdateWindow(hRootDlg);
             }
         }
