@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Aileron-Project-Navigator/Aileron-Project-Navigator.vcxproj" Id="fea90cba-e486-451e-b79f-87a79c13364f" />
+</Solution>
