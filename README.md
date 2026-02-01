@@ -6,7 +6,7 @@
 ---
 
 
-[![Aileron Project Navigator](https://img.youtube.com/vi/eNOzf16bi4E/maxresdefault.jpg)](https://www.youtube.com/watch?v=eNOzf16bi4E)
+[![Aileron Project Navigator]](https://www.youtube.com/watch?v=eNOzf16bi4E)
 
 
 ---
