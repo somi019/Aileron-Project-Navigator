@@ -5,6 +5,12 @@
 
 ---
 
+
+[[Aileron Project Navigator Demonstration Video]](https://www.youtube.com/watch?v=eNOzf16bi4E)
+
+
+---
+
 ## 🚀 Key Features
 
 * **One-Click Access:** Instantly open a folder or a file by clicking on a button.
