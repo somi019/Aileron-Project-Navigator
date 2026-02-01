@@ -25,7 +25,7 @@ Adding a path is designed to be purely visual and friction-free:
 2.  Select **"Add File/Folder"** from the menu.
 3.  Browse to your folder or file and confirm.
 4.  Input your shortcut button's name.
-5.  Your new button is now ready for takeoff.
+5.  Your new button is now ready for use.
 
 ---
 
