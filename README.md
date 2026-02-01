@@ -33,7 +33,7 @@
 
 ## 🛠 How it Works
 
-Aileron maps your complex directory structures into a streamlined, clickable interface. Simply use the plus icon to add your most-frequented folders or files.
+Aileron maps your complex directory structures into a streamlined, clickable interface. Simply click Add to add your most-frequented folders or files.
 
 * **Add Paths:** Use the UI to add your most-frequented directories.
 * **Organize:** Label your buttons for quick recognition.
