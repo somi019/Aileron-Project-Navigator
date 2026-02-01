@@ -10,9 +10,7 @@
 
 
 ---
-
----
-
+**Download Installer**
 
 [![Download Aileron](https://img.shields.io/badge/Download-Aileron%20v1.0-blue?style=for-the-badge&logo=windows)](https://github.com/somi019/Aileron-Project-Navigator/releases/tag/v1.0.0/Aileron_Setup_v1.0.exe)
 
