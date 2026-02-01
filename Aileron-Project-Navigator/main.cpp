@@ -457,6 +457,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
 
 LRESULT CALLBACK AddPathDlgProc(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp) {
     static HWND hNameEdit;
+    static HWND hNameLabel;
     static HWND hPathEdit;
     static HWND hBtnPickFolder;
     static HWND hBtnPickFile;
@@ -484,16 +485,17 @@ LRESULT CALLBACK AddPathDlgProc(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp) {
                 SendMessageW(hBtnSave, WM_SETFONT, (WPARAM)g_hMatrixFont, TRUE);
             }
         } else {
-            // Normal add-path dialog: label + name edit and three buttons in one row
-            hNameEdit = CreateWindowW(L"EDIT", L"", WS_VISIBLE | WS_CHILD | WS_BORDER, 110, 20, 200, 25, hWnd, NULL, hInst, NULL);
+            hNameLabel = CreateWindowW(L"STATIC", L"Name", WS_VISIBLE | WS_CHILD | SS_LEFT, 10, 20, 70, 25, hWnd, NULL, hInst, NULL);
+            hNameEdit = CreateWindowW(L"EDIT", L"", WS_VISIBLE | WS_CHILD | WS_BORDER, 90, 20, 220, 25, hWnd, NULL, hInst, NULL);
 
-            // Place three buttons on the same row
-            hBtnPickFolder = CreateWindowW(L"BUTTON", L"Pick Folder", WS_VISIBLE | WS_CHILD, 10, 60, 100, 30, hWnd, (HMENU)1, hInst, NULL);
-            hBtnPickFile = CreateWindowW(L"BUTTON", L"Pick File", WS_VISIBLE | WS_CHILD, 120, 60, 100, 30, hWnd, (HMENU)3, hInst, NULL);
-            hBtnSave = CreateWindowW(L"BUTTON", L"Save", WS_VISIBLE | WS_CHILD, 230, 60, 100, 30, hWnd, (HMENU)2, hInst, NULL);
+            int btnRowY = 80; // increased gap between input row and buttons
+            hBtnPickFolder = CreateWindowW(L"BUTTON", L"Pick Folder", WS_VISIBLE | WS_CHILD, 10, btnRowY, 100, 30, hWnd, (HMENU)1, hInst, NULL);
+            hBtnPickFile = CreateWindowW(L"BUTTON", L"Pick File", WS_VISIBLE | WS_CHILD, 120, btnRowY, 100, 30, hWnd, (HMENU)3, hInst, NULL);
+            hBtnSave = CreateWindowW(L"BUTTON", L"Save", WS_VISIBLE | WS_CHILD, 230, btnRowY, 100, 30, hWnd, (HMENU)2, hInst, NULL);
 
             // Apply font if available
             if (g_hMatrixFont) {
+                SendMessageW(hNameLabel, WM_SETFONT, (WPARAM)g_hMatrixFont, TRUE);
                 SendMessageW(hNameEdit, WM_SETFONT, (WPARAM)g_hMatrixFont, TRUE);
                 SendMessageW(hBtnPickFolder, WM_SETFONT, (WPARAM)g_hMatrixFont, TRUE);
                 SendMessageW(hBtnPickFile, WM_SETFONT, (WPARAM)g_hMatrixFont, TRUE);
