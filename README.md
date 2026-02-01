@@ -5,6 +5,12 @@
 
 ---
 
+
+[![Aileron Project Navigator](https://img.youtube.com/vi/eNOzf16bi4E/maxresdefault.jpg)](https://www.youtube.com/watch?v=eNOzf16bi4E)
+
+
+---
+
 ## 🚀 Key Features
 
 * **One-Click Access:** Instantly open a folder or a file by clicking on a button.
