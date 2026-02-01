@@ -1,7 +1,7 @@
 # Aileron Project Navigator
 ### **Navigate your workspace at terminal velocity.**
 
-**Aileron** is a lightweight navigation utility designed for developers, designers, and users who juggle complex file structures. It lives in your system tray, providing instant, one-click access to the paths that matter most.
+**Aileron** is a lightweight navigation utility designed for developers, designers, and users who juggle complex file structures. It is providing instant, one-click access to the paths that matter most.
 
 ---
 
