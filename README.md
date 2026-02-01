@@ -45,9 +45,9 @@ Adding a path is designed to be purely visual and friction-free:
 5.  Click Save button
 6.  Your new button is now ready for use.
 
-# Add Paths: Use the UI to add your most-frequented directories.
-# Organize: Label your buttons for quick recognition.
-# Sync & Swap: Use the Save/Load feature to manage multiple .config files for different workflows (e.g., one for Work, one for Personal).
+### Add Paths: Use the UI to add your most-frequented directories.
+### Organize: Label your buttons for quick recognition.
+### Sync & Swap: Use the Save/Load feature to manage multiple .config files for different workflows (e.g., one for Work, one for Personal).
 
 ---
 
