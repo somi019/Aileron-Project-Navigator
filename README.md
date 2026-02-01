@@ -6,7 +6,7 @@
 ---
 
 
-[![Aileron Project Navigator]](https://www.youtube.com/watch?v=eNOzf16bi4E)
+[[Aileron Project Navigator Demonstration Video]](https://www.youtube.com/watch?v=eNOzf16bi4E)
 
 
 ---
