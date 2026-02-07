@@ -43,7 +43,7 @@ Aileron maps your complex directory structures into a streamlined, clickable int
 Adding a path is designed to be purely visual and friction-free:
 
 1.  Click the **Add** option in menu bar.
-2.  Select **"Add File/Folder"** from the menu.
+2.  Select **Add File/Folder** from the menu.
 3.  Browse to your folder or file and confirm.
 4.  Input your shortcut button's name.
 5.  Click Save button
